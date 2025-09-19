@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://www.amazon.in/favicon.ico">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="header">
+        <div class="header-top">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo">
+            </a>
+
+            <!-- Delivery Location -->
+            <div class="deliver-to">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <span class="line1">Hello</span>
+                    <span class="line2">Select your address</span>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <div class="search-dropdown">
+                    <select>
+                        <option>All</option>
+                        <option>Deals</option>
+                        <option>Alexa Skills</option>
+                        <option>Amazon Devices</option>
+                        <option>Electronics</option>
+                    </select>
+                </div>
+                <input type="text" id="searchInput" placeholder="Search Amazon.in">
+                <button id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Right Menu Items -->
+            <div class="header-right">
+                <!-- Language Selection -->
+                <div class="nav-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" alt="India Flag" class="flag-icon">
+                    <span>EN</span>
+                </div>
+
+                <!-- Account & Lists -->
+                <div class="nav-item">
+                    <span class="line1">Hello, Sign in</span>
+                    <span class="line2">Account & Lists</span>
+                </div>
+
+                <!-- Returns & Orders -->
+                <div class="nav-item">
+                    <span class="line1">Returns</span>
+                    <span class="line2">& Orders</span>
+                </div>
+
+                <!-- Cart -->
+                <div class="nav-item cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                    <span>Cart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Navigation -->
+        <nav class="header-bottom">
+            <div class="all-menu">
+                <i class="fas fa-bars"></i>
+                All
+            </div>
+            <div class="nav-links">
+                <a href="#">Best Sellers</a>
+                <a href="#">Mobiles</a>
+                <a href="#">Today's Deals</a>
+                <a href="#">Electronics</a>
+                <a href="#">Prime</a>
+                <a href="#">Fashion</a>
+                <a href="#">New Releases</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Home & Kitchen</a>
+            </div>
+            <div class="prime-offer">
+                Shopping made easy | Download the app
+            </div>
+        </nav>
+    </header>
+  <nav class="nav">
+    <a href="#">All</a>
+    <a href="#">Best Sellers</a>
+    <a href="#">Mobiles</a>
+    <a href="#">Today's Deals</a>
+    <a href="#">Electronics</a>
+    <a href="#">Prime</a>
+    <a href="#">Fashion</a>
+    <a href="#">Customer Service</a>
+  </nav>
+  <main class="main">
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner Slideshow -->
+        <section class="hero-slideshow">
+            <div class="slide-container">
+            <div class="slide fade">
+                <img src="https://m.media-amazon.com/images/I/71U-Q+N7PXL._SX3000_.jpg" alt="Fashion Sale">
+            </div>
+            <div class="slide fade">
+                <img src="https://m.media-amazon.com/images/I/71dbxIcDioL._SX3000_.jpg" alt="Electronics Sale">
+            </div>
+            <div class="slide fade">
+                <img src="https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg" alt="Mobile Offers">
+            </div>
+            <div class="slide fade">
+                <img src="https://m.media-amazon.com/images/I/61TD5JLGhIL._SX3000_.jpg" alt="Book Sale">
+            </div>                <!-- Navigation arrows -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                
+                <!-- Navigation dots -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Card 1 - Fashion -->
+            <div class="product-card">
+                <h2>Up to 60% off | Styles for women</h2>
+                <div class="quad-image-container">
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/71h+K4pUBxL._AC_UL320_.jpg" alt="Women's Clothing">
+                        <span>Women's Clothing</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/61utX8kBDlL._AC_UL320_.jpg" alt="Footwear">
+                        <span>Footwear</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/71Ukzn8qqWL._AC_UL320_.jpg" alt="Watches">
+                        <span>Watches</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/91r2jjn9-kL._AC_UL320_.jpg" alt="Bags & Wallets">
+                        <span>Bags & Wallets</span>
+                    </div>
+                </div>
+                <a href="#" class="card-link">See all offers</a>
+            </div>
+
+            <!-- Card 2 - Electronics -->
+            <div class="product-card">
+                <h2>Starting ₹199 | Electronics & accessories</h2>
+                <div class="quad-image-container">
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/61CqYq+xwNL._AC_UL320_.jpg" alt="Mobile Cases">
+                        <span>Mobile Cases</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/71ByNT34bfL._AC_UL320_.jpg" alt="Headphones">
+                        <span>Headphones</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/61vjUCzQCGL._AC_UL320_.jpg" alt="Data Storage">
+                        <span>Data Storage</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/61LLreJzvaL._AC_UL320_.jpg" alt="Camera">
+                        <span>Camera</span>
+                    </div>
+                </div>
+                <a href="#" class="card-link">See all offers</a>
+            </div>
+
+            <!-- Card 3 - Automotive -->
+            <div class="product-card">
+                <h2>Automotive essentials | Up to 60% off</h2>
+                <div class="quad-image-container">
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/71c1H49pQ8L._AC_UL320_.jpg" alt="Cleaning Accessories">
+                        <span>Cleaning Accessories</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/71smr9zqwnL._AC_UL320_.jpg" alt="Tyre & Rim Care">
+                        <span>Tyre & Rim Care</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/61-ZpVYlyxL._AC_UL320_.jpg" alt="Helmets">
+                        <span>Helmets</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/71x4x2yXOYL._AC_UL320_.jpg" alt="Vacuum Cleaner">
+                        <span>Vacuum Cleaner</span>
+                    </div>
+                </div>
+                <a href="#" class="card-link">See all offers</a>
+            </div>
+
+            <!-- Card 4 - Kitchen -->
+            <div class="product-card">
+                <h2>Kitchen & dining essentials</h2>
+                <div class="quad-image-container">
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/61u2dhY9qQL._AC_UL320_.jpg" alt="Kitchen Storage">
+                        <span>Kitchen Storage</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/61E6E1QoCUL._AC_UL320_.jpg" alt="Cookware">
+                        <span>Cookware</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/71HCWRLGJ1L._AC_UL320_.jpg" alt="Kitchen Tools">
+                        <span>Kitchen Tools</span>
+                    </div>
+                    <div class="quad-image">
+                        <img src="https://m.media-amazon.com/images/I/61Wt6rjWy+L._AC_UL320_.jpg" alt="Gas Stoves">
+                        <span>Gas Stoves</span>
+                    </div>
+                </div>
+                <a href="#" class="card-link">See all offers</a>
+            </div>
+        </div>
+
+        <!-- Today's Deals Section -->
+        <section class="today-deals">
+            <div class="section-header">
+                <h2>Today's Deals</h2>
+                <a href="#">See all deals</a>
+            </div>
+            <div class="deals-slider">
+                <button class="slider-nav prev-deal">‹</button>
+                <div class="deals-container">
+                    <div class="deal-item">
+                        <div class="deal-image">
+                            <img src="https://m.media-amazon.com/images/I/61aUBxqc5PL._AC_UL320_.jpg" alt="Deal 1">
+                        </div>
+                        <div class="deal-discount">
+                            <span class="discount-tag">Up to 62% off</span>
+                            <span class="deal-type">Deal of the Day</span>
+                        </div>
+                        <div class="deal-title">Best Selling Smartwatches</div>
+                    </div>
+                    <div class="deal-item">
+                        <div class="deal-image">
+                            <img src="https://m.media-amazon.com/images/I/71aBLaC4ENL._AC_UL320_.jpg" alt="Deal 2">
+                        </div>
+                        <div class="deal-discount">
+                            <span class="discount-tag">Up to 55% off</span>
+                            <span class="deal-type">Deal of the Day</span>
+                        </div>
+                        <div class="deal-title">Premium Smartphones</div>
+                    </div>
+                    <div class="deal-item">
+                        <div class="deal-image">
+                            <img src="https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL320_.jpg" alt="Deal 3">
+                        </div>
+                        <div class="deal-discount">
+                            <span class="discount-tag">Up to 70% off</span>
+                            <span class="deal-type">Deal of the Day</span>
+                        </div>
+                        <div class="deal-title">Premium Headphones</div>
+                    </div>
+                    <!-- More deal items -->
+                </div>
+                <button class="slider-nav next-deal">›</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Grid 1 -->
+    <section class="product-section">
+      <h2>Top Deals</h2>
+      <div class="product-grid">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/81lEWaKZFhL._AC_UL320_.jpg" alt="Amazon Basics">
+          <div class="title">Amazon Basics</div>
+          <div class="price">₹3,499</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61XSG7HdyPL._AC_UL320_.jpg" alt="Computers & Accessories">
+          <div class="title">Computers</div>
+          <div class="price">₹2,999</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61dRwVPnbcL._AC_UL320_.jpg" alt="Beauty picks">
+          <div class="title">Beauty picks</div>
+          <div class="price">₹10,999</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._AC_UL320_.jpg" alt="Laptops">
+          <div class="title">Shop Laptops</div>
+          <div class="price">₹499</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid 2 -->
+    <section class="product-section">
+      <h2>Trending in Electronics</h2>
+      <div class="product-grid">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71nNJF1CRnL._AC_UL320_.jpg" alt="Headphones">
+          <div class="title">Premium Headphones</div>
+          <div class="price">₹1,499</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_UL320_.jpg" alt="Electronics">
+          <div class="title">Electronics</div>
+          <div class="price">₹1,299</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71XVw9zYi5L._AC_UL320_.jpg" alt="Smart Watch">
+          <div class="title">Smart Watch</div>
+          <div class="price">₹2,999</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71d5fMDvq9L._AC_UL320_.jpg" alt="TV & Video">
+          <div class="title">TV & Video</div>
+          <div class="price">₹2,499</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign-in Banner -->
+    <section class="signin-banner" style="margin: 40px 0; text-align:center;">
+      <p style="font-size:1.2rem;">See personalized recommendations</p>
+      <button style="background:#FFD814; border:none; padding:10px 32px; border-radius:4px; font-weight:bold; cursor:pointer;">Sign in</button>
+      <p style="margin-top:8px;">New customer? <a href="#" style="color:#007185;">Start here.</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" style="background:#232f3e; color:white; padding:32px 0 0 0; margin-top:32px;">
+    <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:32px; padding:0 32px;">
+      <div>
+        <h3>Get to Know Us</h3>
+        <ul style="list-style:none; padding:0;">
+          <li><a href="#" style="color:white; text-decoration:none;">About Us</a></li>
+          <li><a href="#" style="color:white; text-decoration:none;">Careers</a></li>
+          <li><a href="#" style="color:white; text-decoration:none;">Press Releases</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Connect with Us</h3>
+        <ul style="list-style:none; padding:0;">
+          <li><a href="#" style="color:white; text-decoration:none;">Facebook</a></li>
+          <li><a href="#" style="color:white; text-decoration:none;">Twitter</a></li>
+          <li><a href="#" style="color:white; text-decoration:none;">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Make Money with Us</h3>
+        <ul style="list-style:none; padding:0;">
+          <li><a href="#" style="color:white; text-decoration:none;">Sell on Amazon</a></li>
+          <li><a href="#" style="color:white; text-decoration:none;">Become an Affiliate</a></li>
+          <li><a href="#" style="color:white; text-decoration:none;">Advertise Your Products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Let Us Help You</h3>
+        <ul style="list-style:none; padding:0;">
+          <li><a href="#" style="color:white; text-decoration:none;">Your Account</a></li>
+          <li><a href="#" style="color:white; text-decoration:none;">Returns Centre</a></li>
+          <li><a href="#" style="color:white; text-decoration:none;">Help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center; color:#ddd; margin:32px 0 0 0; font-size:0.95rem; padding-bottom:16px;">
+      © 2025 Amazon Clone. Built for demo purposes.
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>
